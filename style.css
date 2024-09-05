@@ -1,0 +1,392 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Amiri", serif;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+
+header {
+  width: 100%;
+  height: 40px;
+  color: white;
+  display: flex;
+}
+body {
+  background-color: bisque;
+}
+.logo {
+  text-align: center;
+  width: calc(100% / 3);
+  background-color: rgb(123, 8, 8);
+  height: 100%;
+  font-weight: bold;
+  font-size: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  transition: 1s;
+}
+.logo:hover {
+  background-color: rgb(83, 8, 8);
+  transform: scale(1.04);
+  cursor: pointer;
+}
+
+.logo-a {
+  text-align: center;
+  width: 100%;
+  background-color: rgb(123, 8, 8);
+  height: 100%;
+  font-weight: bold;
+  font-size: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  display: block;
+}
+
+.logo-a:active {
+  background-color: rgb(67, 7, 7);
+  cursor: pointer;
+}
+.links {
+  display: flex;
+  justify-content: space-around;
+  width: calc(2 * (100% / 3));
+}
+.about {
+  text-align: center;
+  width: 100%;
+  font-size: 20px;
+  background-color: rgb(167, 6, 22);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  font-weight: bold;
+  transition: 1s;
+}
+.about:hover {
+  background-color: rgb(208, 7, 27);
+  transform: scale(1.04);
+  cursor: pointer;
+}
+.about-a {
+  text-align: center;
+  width: 100%;
+  background-color: rgb(167, 6, 22);
+  height: 100%;
+  font-weight: bold;
+  font-size: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  display: block;
+}
+
+.about-a:active {
+  background-color: rgb(206, 11, 30);
+  cursor: pointer;
+}
+.contact {
+  text-align: center;
+  width: 100%;
+  background-color: rgb(185, 10, 10);
+  font-weight: bold;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  font-size: 20px;
+  transition: 1s;
+}
+.contact:hover {
+  background-color: rgb(214, 10, 10);
+  transform: scale(1.04);
+  cursor: pointer;
+}
+.contact-a {
+  text-align: center;
+  width: 100%;
+  background-color: rgb(185, 10, 10);
+  height: 100%;
+  font-weight: bold;
+  font-size: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  display: block;
+}
+
+.contact-a:active {
+  background-color: rgb(218, 13, 13);
+  cursor: pointer;
+}
+.header-for-index {
+  display: flex;
+  justify-content: space-around;
+}
+.container-index-welcome {
+  width: 50%;
+  height: 100px;
+  background-color: rgba(143, 81, 5, 0.344);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.welcome-h1 {
+  width: 100%;
+  text-align: center;
+  color: white;
+  animation: welcomAnimation 4s ease-in-out infinite;
+}
+@keyframes welcomAnimation {
+  0% {
+    transform: translateX(0);
+  }
+  33.33% {
+    transform: translateX(100px);
+  }
+  66.66% {
+    transform: translateX(-100px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.container-header {
+  width: 50%;
+  height: 100px;
+  background-color: rgba(143, 81, 5, 0.344);
+  margin: auto;
+  margin-top: 50px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(-40px);
+}
+.container-header-h1 {
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+.container-welcome-with-header {
+  display: flex;
+  width: 50%;
+  flex-wrap: wrap;
+}
+
+.paint-brush-right {
+  margin: 50px;
+  width: 20%;
+  height: auto;
+  transform: translateX(-100px);
+}
+.paint-brush-left {
+  margin: 50px;
+  width: 15%;
+  height: 15%;
+  transform: translateX(100px) rotate(90deg);
+}
+.container-index {
+  display: flex;
+  justify-content: space-around;
+}
+.container-text {
+  width: 80%;
+  height: 100px;
+  background-color: rgba(143, 81, 5, 0.344);
+  margin: auto;
+  margin-top: 50px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: textAnimation 4s ease-in-out infinite;
+}
+.container-text-h1 {
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+@keyframes textAnimation {
+  0% {
+    transform: translatey(30px);
+  }
+  50% {
+    transform: translatey(-30px);
+  }
+  100% {
+    transform: translatey(30px);
+  }
+}
+.works {
+  width: 75%;
+  height: 400px;
+  background-color: rgba(255, 162, 0, 0.608);
+  margin: 50px auto;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.works-h1 {
+  margin: 20px auto 0 auto;
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+.images-div {
+  background-color: aliceblue;
+  width: 95%;
+  margin: 20px auto 50px auto;
+  height: 300px;
+  border-radius: 20px;
+  background-color: rgba(237, 118, 14, 0.253);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.images {
+  width: 15%;
+  height: auto;
+  border-radius: 20px;
+  transition: 2s;
+}
+
+.images:hover {
+  transform: scale(1.2);
+}
+footer {
+  width: 100%;
+  height: 30px;
+  margin-top: 50px;
+  background-color: brown;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+.copy-right-span {
+  display: inline-block;
+  transform: rotate(180deg);
+  font-weight: bold;
+  font-size: large;
+}
+.contact-links {
+  margin-left: 20px;
+  color: white;
+}
+i {
+  margin-left: 20px;
+  margin-top: 5px;
+  cursor: pointer;
+  color: white;
+}
+.links-and-numbers-container {
+  width: 70%;
+  margin: 50px auto 50px auto;
+  height: 400px;
+  background-color: rgba(222, 184, 135, 0.57);
+  border-radius: 20px;
+  overflow: hidden;
+}
+.contact-div {
+  margin: 50px auto;
+  width: 50%;
+  height: 60px;
+  background-color: rgba(255, 157, 0, 0.423);
+  border-radius: 20px;
+  margin-top: 50px;
+  transition: 1s;
+}
+.contact-div:hover {
+  transform: scale(1.2);
+}
+.contact-h1 {
+  text-align: center;
+  color: white;
+}
+.contact-number {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 30px;
+  color: black;
+  margin: 50px;
+}
+.first-number i {
+  color: black;
+}
+.seconde-number i {
+  color: black;
+}
+.instagram-link {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+  font-size: 50px;
+}
+.instagram-link h2 {
+  font-size: 30px;
+  width: 50%;
+  margin: auto;
+  background-color: rgba(255, 157, 0, 0.423);
+  border-radius: 20px;
+  color: white;
+  transition: 1s;
+}
+.instagram-link h2:hover {
+  transform: scale(1.2);
+}
+.instagram-link a i {
+  color: rgb(93, 6, 6);
+}
+.full-page {
+  height: 100vh;
+}
+.map {
+  width: 75%;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.map iframe {
+  border-radius: 20px;
+}
+.some-works-about {
+  width: 40%;
+  height: auto;
+  background-color: rgba(255, 157, 0, 0.423);
+  border-radius: 20px;
+  color: white;
+  margin: 50px auto;
+  text-align: center;
+  transition: 1s;
+}
+.some-works-about:hover {
+  transform: scale(1.2);
+}
+.videos-of-works {
+  display: flex;
+  flex-wrap: wrap;
+  width: 95%;
+  margin: auto;
+  background-color: rgba(219, 159, 63, 0.168);
+  border-radius: 20px;
+}
+.video {
+  width: 17%;
+  transition: 1s;
+  margin: 50px;
+}
+.video:hover {
+  transform: scale(1.1);
+}
+.video video {
+  border-radius: 20px;
+  width: 100%;
+}
