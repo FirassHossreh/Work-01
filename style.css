@@ -224,7 +224,6 @@ body {
 }
 .works {
   width: 75%;
-  height: 400px;
   background-color: rgba(255, 162, 0, 0.608);
   margin: 50px auto;
   border-radius: 20px;
@@ -241,19 +240,20 @@ body {
   background-color: aliceblue;
   width: 95%;
   margin: 20px auto 50px auto;
-  height: 300px;
   border-radius: 20px;
   background-color: rgba(237, 118, 14, 0.253);
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .images {
-  width: 15%;
+  width: 40%;
   height: auto;
   border-radius: 20px;
   transition: 2s;
+  margin: 50px;
 }
 
 .images:hover {
